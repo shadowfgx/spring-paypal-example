@@ -14,7 +14,7 @@ public class PaypalConfig {
     private String clientId;
     @Value("${paypal.client.secret}")
     private String clientSecret;
-    @Value("${paypal.mode}")
+    @Value(staticConstructor = "${paypal.mode}")
     private String mode;
 
     @Bean
